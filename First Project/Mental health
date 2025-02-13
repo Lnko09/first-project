@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health Stigma in Africa</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/391/original/istockphoto-1294477039-612x612.jpg?1739382149")
+            no-repeat center center/cover;
+        color: white;
+        text-align: center;
+      }
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+      }
+      h1 {
+        font-size: 2em;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 1em;
+        line-height: 1.5;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 1em;
+        color: white;
+        background: #ff5733;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      button:hover {
+        background: #ff2e00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Breaking the Stigma Around Mental Health</h1>
+      <h2>Understanding Mental Health in African Communities</h2>
+      <p>
+        Mental health remains a taboo subject in many African cultures.
+        <strong>Many individuals suffer in silence</strong>, fearing societal
+        judgment and discrimination.
+      </p>
+      <p>
+        It is time to <em>break the silence</em> and create awareness about
+        mental health issues to encourage open conversations and support.
+      </p>
+      <hr />
+      <p>
+        Do you think mental health awareness is improving in your community?
+      </p>
+      <button onclick="getUserResponse()">Share Your Thoughts</button>
+    </div>
+
+    <script>
+      function getUserResponse() {
+        let response = prompt(
+          "Do you think mental health awareness is improving in your community? (Yes/No)"
+        );
+        if (response) {
+          if (response.toLowerCase() === "yes") {
+            alert(
+              "That's great! Keep spreading awareness and supporting mental health initiatives."
+            );
+          } else {
+            alert(
+              "Mental health awareness is crucial. Let's work together to break the stigma."
+            );
+          }
+        } else {
+          alert("Please enter a response to participate in the discussion.");
+        }
+      }
+    </script>
+  </body>
+</html>
